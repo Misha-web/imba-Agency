@@ -1,0 +1,44 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "blocks/header";
+@import "blocks/footer";
+
+body {
+    color: $primary_color;
+    font-size: $primary_size;
+    font-weight: $primary_weight;
+    font-family: $primary_font;
+}
+
+*,
+*:before,
+*:after  {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
