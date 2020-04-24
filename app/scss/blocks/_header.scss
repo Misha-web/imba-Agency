@@ -6,7 +6,7 @@
 	background-position: bottom;
 	background-size: cover;
 	height: 100%;
-	&__inner {
+	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -73,7 +73,7 @@
 			left: -60px;
 			width: 30px;
 			height: 2px;
-			background-color: #ff4242;
+			background-color: $color_gamma;
 		}
 	}
 	&__arrow {
@@ -99,6 +99,16 @@
 			background-color: $secondary_color;
 		}
 	}
+}
+
+.header__inner.fixed {
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $primary_color;
+	opacity: 0.9;
 }
 
 
@@ -242,6 +252,9 @@
 			margin-bottom: 10px;
 		}
 	}
+	.header__inner.fixed {
+		padding: 10px 0;
+	}
 }
 
 @media(max-width: $minwidth) {
@@ -265,5 +278,9 @@
 		}
 	}
 }
+
+
+
+
 
 

@@ -9,24 +9,28 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container">
-			<div class="header__inner">
-				<div class="logo"><span>imba.</span>Agency</div>
-				<div class="header__item">
-					<button class="header__item-btn">Обсудить проект</button>
-					<a href="tel:380953941392" class="header__item-phone">38 (095) 394-13-92</a>
+		<div class="header__inner" id="header__inner">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="logo"><span>imba.</span>Agency</div>
+					<div class="header__item">
+						<button class="header__item-btn">Обсудить проект</button>
+						<a href="tel:380953941392" class="header__item-phone">38 (095) 394-13-92</a>
+					</div>
 				</div>
 			</div>
-			<!-- /.header__inner -->
-			<div class="header__body">
+		</div>
+		<!-- /.header__inner -->
+		<div class="header__body" id="header__body">
+			<div class="container">
 				<div class="header__title">
 					<h1 class="header__title-text">Решаем любые</h1>
-					<img src="img/header-dots.png" alt="" class="header__title-img"/>
+					<img src="img/header-dots.png" alt="Решаем любые IT-задачи" class="header__title-img"/>
 				</div>
 				<h2 class="header__body-suptitle">IT-задачи</h2>
 				<p class="header__body-text">Создаем очереди из клиентов, разрабатываем сайты, дизайн, развиваем личный бренд, форумируем репутацию в Интернет, создаем видео,  специализируемся на белом хакерстве.</p>
 				<div class="header__body-description">Представляем интересы известных политиков и компаний, чьи имена предпочитаем не разглашать.</div>
-				<div class="header__arrow animated fadeInDown infinite">
+				<div class="header__arrow animated fadeInDown infinite" data-scroll="#about">
 					<div class="header__arrow-text">далее</div>
 				</div>
 			</div>
@@ -35,6 +39,43 @@
 	</header>
 	<!-- /.header -->
 
+	<section class="about section" id="about">
+		<div class="container">
+			<div class="section__item">
+				<h3 class="section__item-title">Почему к нам обращаются</h3>
+				<img src="img/dots-01.png" alt="Почему к нам обращаются" class="section__item-img" />
+			</div>
+			<div class="about__inner">
+				<div class="about__item">
+					<span class="about__item-order">01</span>
+					<p class="about__item-description">Нет времени разбираться в маркетинге и ИТ</p>
+				</div>
+				<div class="about__item">
+					<span class="about__item-order">02</span>
+					<p class="about__item-description">Стоим на месте или медленно растём</p>
+				</div>
+				<div class="about__item">
+					<span class="about__item-order">03</span>
+					<p class="about__item-description">Конкуренты вытесняют с рынка</p>
+				</div>
+				<div class="about__item">
+					<span class="about__item-order">04</span>
+					<p class="about__item-description">Реклама <br /> не дает результатов</p>
+				</div>
+				<div class="about__item">
+					<span class="about__item-order">05</span>
+					<p class="about__item-description">Хотим отдать маркетинг на удаленку</p>
+				</div>
+				<div class="about__item">
+					<span class="about__item-order">06</span>
+					<p class="about__item-description">Нет <br /> продаж</p>
+				</div>
+			</div>
+			<!-- /.about__inner -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.about section -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
