@@ -1,0 +1,269 @@
+.header {
+	padding: 30px 0px 210px;
+	color: $secondary_color;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	height: 100%;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item-btn {
+		margin-right: 30px;
+		padding: 14px 25px ;
+		color: $secondary_color;
+		font-family: $font_alpha;
+		font-size: $size_beta;
+		font-weight: $secondary_weight;
+		text-transform: uppercase;
+		border: 3px solid $color_beta;
+	}
+	&__item-phone {
+		color: $color_beta;
+		font-size: $size_alpha;
+		text-decoration: none;
+	}
+	&__body {
+		padding-top: 120px;
+	}
+	&__title {
+		margin-bottom: 25px;
+		display: flex;
+		align-items: center;
+	}
+	&__title-text {
+		margin-right: 35px;
+		font-family: $secondary_font;
+		font-size: $size_big_2;
+		text-transform: uppercase;
+	}
+	&__title-img {
+		display: block;
+		width: 100%;
+		max-width: 110px;
+	}
+	&__body-suptitle {
+		margin-bottom: 25px;
+		text-shadow: 0 0.2vh 0px #fff, 2px 0 0px #fff, 0 -2px 0px #fff, -2px 0 0px #fff, 0 0 5px #fff;
+		color: #30333f;
+		letter-spacing: 5px;
+		font-family: $secondary_font;
+		font-size: $size_big;
+		text-transform: uppercase;
+	}
+	&__body-text {
+		margin-bottom: 40px;
+		max-width: 700px;
+		font-weight: $secondary_weight;
+		line-height: 36px;
+	}
+	&__body-description {
+		max-width: 500px;
+		margin-bottom: 25px;
+		position: relative;
+		font-size: 18px;
+		line-height: 30px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 20%;
+			left: -60px;
+			width: 30px;
+			height: 2px;
+			background-color: #ff4242;
+		}
+	}
+	&__arrow {
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__arrow-text {
+		display: inline-block;
+		text-align: center;
+		position: relative;
+		font-size: $size_beta;
+		text-transform: uppercase;
+		transform: rotate(-90deg);
+		&:after {
+			position: absolute;
+			top: 5px;
+			right: 170%;
+			content: '';
+			height: 3px;
+			width: 50px;
+			background-color: $secondary_color;
+		}
+	}
+}
+
+
+@media(max-width: $maxwidth) {
+	.header {
+		&__body-description {
+			padding-left: 30px;
+			&:before {
+				left: -1%;
+			}
+		}
+	}
+}
+
+@media(max-width: $md1) {
+	.header {
+		&__title-text {
+			margin-right: 15px;
+			font-size: 66px;
+		}
+		&__body-suptitle {
+			font-size: 122px;
+		}
+	}
+}
+
+@media(max-width: $md2) {
+	.header {
+		&__body {
+			padding-top: 100px;
+		}
+		&__title-text {
+			font-size: 52px;
+		}
+		&__body-suptitle {
+			font-size: 114px;
+		}
+		&__body-text {
+			margin-bottom: 30px;
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+}
+
+@media(max-width: $md3) {
+	.header {
+		padding: 30px 0px 70px;
+		background-image: url(../img/header-bg-mob.jpg);
+		background-position: center;
+		&__body {
+			padding-top: 80px;
+		}
+		&__title-text {
+			font-size: 46px;
+		}
+		&__body-suptitle {
+			font-size: 100px;
+		}
+		&__body-text {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__arrow-text {
+			font-size: 10px;
+			&:after {
+				width: 30px;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 644px) {
+	.header {
+		&__body {
+			padding-top: 60px;
+		}
+		&__title-text {
+			font-size: 36px;
+		}
+		&__title-img {
+			max-width: 80px;
+		}
+		&__body-suptitle {
+			font-size: 72px;
+		}
+		&__body-description {
+			font-size: 16px;
+			line-height: 25px;
+			max-width: 100%;
+			padding-left: 10px;
+			&:before {
+				top: 15%;
+				left: -5%;
+			}
+		}
+		&__item-btn {
+			margin-right: 15px;
+			padding: 12px 20px;
+		}
+		&__item-phone {
+			font-size: 13px;
+		}
+	}
+}
+
+@media(max-width: $md4) {
+	.header {
+		&__body {
+			padding-top: 50px;
+		}
+		&__title-text {
+			font-size: 26px;
+		}
+		&__title-img {
+			max-width: 60px;
+		}
+		&__body-suptitle {
+			font-size: 48px;
+		}
+		&__body-text {
+			font-size: 18px;
+			max-width: 100%;
+			line-height: 24px;
+		}
+		&__body-description {
+			&:before {
+				left: -7%;
+			}
+		}
+		&__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		&__item-btn {
+			margin-right: 0px;
+			padding: 10px 15px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media(max-width: $minwidth) {
+	.header {
+		&__body {
+			padding-top: 30px;
+		}
+		&__title-text {
+			font-size: 24px;
+		}
+		&__title-img {
+			max-width: 40px;
+		}
+		&__body-suptitle {
+			font-size: 38px;
+		}
+		&__body-description {
+			&:before {
+				left: -8%;
+			}
+		}
+	}
+}
+
+

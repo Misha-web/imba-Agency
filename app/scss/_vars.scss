@@ -1,10 +1,43 @@
+//Colors
 $primary_color: #1e1e2b;
+$secondary_color: #fff;
+
+$x_color_blue: #428dff;
+$color_alpha: $x_color_blue;
+
+$x_color_gray: #3d3f48;
+$color_beta: $x_color_gray;
 
 
+//Font-size
 $primary_size: 24px;
 
+$size_alpha: 14px;
 
+$size_beta: 12px;
+
+$size_big: 130px;
+
+$size_big_2: 72px;
+
+
+//Font-weight
 $primary_weight: 700;
 
+$secondary_weight: 400;
 
+//Font-family
 $primary_font: 'Circe', sans-serif;
+
+$font_alpha: "Circe - Extra Bold", sans-serif;
+
+$secondary_font: "Futura PT", sans-serif;
+
+// Media screen
+$maxwidth: 1300px;
+$md1: 1200px;
+$md2: 991px;
+$md3: 768px;
+$md4: 480px;
+$minwidth: 359px;
+

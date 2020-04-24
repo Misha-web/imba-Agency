@@ -1,8 +1,7 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-@import "blocks/header";
-@import "blocks/footer";
+@import "blocks/_header.scss";
 
 body {
     color: $primary_color;
@@ -42,3 +41,22 @@ button {
     margin: 0 auto;
 }
 
+.logo {
+    color: $color_alpha;
+    font-family: $secondary_font;
+    span {
+        color: $secondary_color;
+    }
+}
+
+@media(max-width: $md3) {
+    .logo {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: $minwidth) {
+    .logo {
+        font-size: 18px;
+    }
+}
