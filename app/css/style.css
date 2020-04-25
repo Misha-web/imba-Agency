@@ -3174,19 +3174,19 @@ template {
 }
 
 @font-face {
-  font-family: 'Circe';
-  src: url("../fonts/Circe-Regular.eot");
-  src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-family: 'Circe Regular';
+  src: url("../Circe-Regular.eot");
+  src: url("../Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../Circe-Regular.woff") format("woff"), url("../Circe-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Circe';
+  font-family: 'Circe Bold';
   src: url("../fonts/Circe-Bold.eot");
   src: local("Circe Bold"), local("Circe-Bold"), url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Circe';
+  font-family: 'Circe Extra Bold';
   src: url("../fonts/Circe-ExtraBold.eot");
   src: local("Circe ExtraBold"), local("Circe-ExtraBold"), url("../fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe-ExtraBold.ttf") format("truetype");
 }
@@ -3198,7 +3198,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Futura PT';
+  font-family: 'Futura PT Bold';
   src: url("FuturaPT-Bold.eot");
   src: local("Futura PT Bold"), local("FuturaPT-Bold"), url("FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("FuturaPT-Bold.woff") format("woff"), url("FuturaPT-Bold.ttf") format("truetype");
 }
@@ -3223,7 +3223,7 @@ template {
   margin-right: 30px;
   padding: 14px 25px;
   color: #fff;
-  font-family: "Circe - Extra Bold", sans-serif;
+  font-family: "Circe Extra Bold", sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -3248,7 +3248,7 @@ template {
 
 .header__title-text {
   margin-right: 35px;
-  font-family: "Futura PT", sans-serif;
+  font-family: "Futura PT Bold", sans-serif;
   font-size: 72px;
   text-transform: uppercase;
 }
@@ -3264,14 +3264,14 @@ template {
   text-shadow: 0 0.2vh 0px #fff, 2px 0 0px #fff, 0 -2px 0px #fff, -2px 0 0px #fff, 0 0 5px #fff;
   color: #30333f;
   letter-spacing: 5px;
-  font-family: "Futura PT", sans-serif;
+  font-family: "Futura PT Bold", sans-serif;
   font-size: 130px;
   text-transform: uppercase;
 }
 
 .header__body-text {
   margin-bottom: 40px;
-  max-width: 700px;
+  max-width: 710px;
   font-weight: 400;
   line-height: 36px;
 }
@@ -3326,6 +3326,7 @@ template {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
   background-color: #1e1e2b;
   opacity: 0.9;
 }
@@ -3485,7 +3486,7 @@ template {
 }
 
 .about__inner {
-  margin: 0 -15px;
+  margin: 50px -15px 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3501,7 +3502,7 @@ template {
 .about__item-order {
   margin-right: 35px;
   color: #ff4242;
-  font-family: "Futura PT", sans-serif;
+  font-family: "Futura PT Bold", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
 }
@@ -3555,7 +3556,6 @@ template {
 }
 
 .section__item {
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
 }
@@ -3563,7 +3563,7 @@ template {
 .section__item-title {
   margin-right: 35px;
   font-size: 44px;
-  line-height: 100px;
+  line-height: 80px;
   text-transform: uppercase;
 }
 
@@ -3577,7 +3577,6 @@ template {
   .section__item-title {
     margin-right: 25px;
     font-size: 38px;
-    line-height: 90px;
   }
 }
 
@@ -3611,6 +3610,7 @@ template {
 
 @media (max-width: 480px) {
   .section__item-title {
+    margin-right: 0;
     text-align: center;
   }
   .section__item-img {
@@ -3618,11 +3618,106 @@ template {
   }
 }
 
+.contact {
+  position: relative;
+  padding: 120px 0px;
+  background-image: url(../img/contact-bg.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact__img {
+  position: absolute;
+  top: -30px;
+  display: block;
+  width: 100%;
+  max-width: 75px;
+}
+
+.contact__title {
+  display: inline-block;
+  margin: 40px 0px 60px 20px;
+  color: #428dff;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.contact__text {
+  color: #1e1e2b;
+  max-width: 750px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.contact__text span {
+  font-family: "Circe Bold", sans-serif;
+  font-weight: 700;
+}
+
+.contact__btn {
+  margin-top: 10px;
+  padding: 28px 42px 25px 45px;
+}
+
+.btn {
+  color: #fff;
+  font-family: "Circe Extra Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #ff4242;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 0px;
+  }
+  .contact__img {
+    top: -20px;
+    max-width: 55px;
+  }
+  .contact__title {
+    margin: 30px 0px 40px 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .contact__text {
+    max-width: 100%;
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .contact__btn {
+    padding: 25px 38px 22px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 60px 0px;
+  }
+  .contact__title {
+    margin: 20px 0px 30px 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .contact__text {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .contact__btn {
+    padding: 23px 22px 23px 22px;
+  }
+}
+
 body {
   color: #1e1e2b;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Circe", sans-serif;
+  font-family: "Circe Regular", sans-serif;
 }
 
 *,
@@ -3661,7 +3756,7 @@ button {
 
 .logo {
   color: #428dff;
-  font-family: "Futura PT", sans-serif;
+  font-family: "Futura PT Bold", sans-serif;
 }
 
 .logo span {

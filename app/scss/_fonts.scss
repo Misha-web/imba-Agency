@@ -1,46 +1,45 @@
 @font-face {
-	font-family: 'Circe';
-	src: url('../fonts/Circe-Regular.eot');
-	src: local('Circe'), local('Circe-Regular'),
-		url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Circe-Regular.woff') format('woff'),
-		url('../fonts/Circe-Regular.ttf') format('truetype');
+	font-family: 'Circe Regular';
+	src: url('../Circe-Regular.eot');
+	src: url('../Circe-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../Circe-Regular.woff') format('woff'),
+	url('../Circe-Regular.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Circe';
+	font-family: 'Circe Bold';
 	src: url('../fonts/Circe-Bold.eot');
 	src: local('Circe Bold'), local('Circe-Bold'),
-		url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Circe-Bold.woff') format('woff'),
-		url('../fonts/Circe-Bold.ttf') format('truetype');
+	url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-Bold.woff') format('woff'),
+	url('../fonts/Circe-Bold.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Circe';
+	font-family: 'Circe Extra Bold';
 	src: url('../fonts/Circe-ExtraBold.eot');
 	src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
-		url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Circe-ExtraBold.woff') format('woff'),
-		url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+	url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Circe-ExtraBold.woff') format('woff'),
+	url('../fonts/Circe-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Futura PT Book';
-    src: url('../fonts/FuturaPT-Book.eot');
-    src: local('Futura PT Book'), local('FuturaPT-Book'),
-        url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FuturaPT-Book.woff') format('woff'),
-        url('../fonts/FuturaPT-Book.ttf') format('truetype');
+	font-family: 'Futura PT Book';
+	src: url('../fonts/FuturaPT-Book.eot');
+	src: local('Futura PT Book'), local('FuturaPT-Book'),
+	url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FuturaPT-Book.woff') format('woff'),
+	url('../fonts/FuturaPT-Book.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Futura PT';
-    src: url('FuturaPT-Bold.eot');
-    src: local('Futura PT Bold'), local('FuturaPT-Bold'),
-        url('FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
-        url('FuturaPT-Bold.woff') format('woff'),
-        url('FuturaPT-Bold.ttf') format('truetype');
+	font-family: 'Futura PT Bold';
+	src: url('FuturaPT-Bold.eot');
+	src: local('Futura PT Bold'), local('FuturaPT-Bold'),
+	url('FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+	url('FuturaPT-Bold.woff') format('woff'),
+	url('FuturaPT-Bold.ttf') format('truetype');
 }
 
 

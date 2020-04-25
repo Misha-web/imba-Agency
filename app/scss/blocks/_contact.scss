@@ -1,0 +1,89 @@
+.contact {
+	position: relative;
+	padding: 120px 0px;
+	background-image: url(../img/contact-bg.jpg);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__img {
+		position: absolute;
+		top: -30px;
+		display: block;
+		width: 100%;
+		max-width: 75px;
+	}
+	&__title {
+		display: inline-block;
+		margin: 40px 0px 60px 20px;
+		color: $color_alpha;
+		background-color: #ffffff;
+		padding: 15px;
+	}
+	&__text {
+		color: #1e1e2b;
+		max-width: 750px;
+		margin-bottom: 30px;
+		font-weight: $secondary_weight;
+		line-height: 36px;
+		span {
+			font-family: $font_gamma;
+			font-weight: $primary_weight;
+		}
+	}
+	&__btn {
+		margin-top: 10px;
+		padding: 28px 42px 25px 45px;
+	}
+}
+.btn {
+	color: $secondary_color;
+	font-family: $font_alpha;
+	font-size: $size_gamma;
+	font-weight: $secondary_weight;
+	text-transform: uppercase;
+	background-color: #ff4242;
+}
+
+@media(max-width: $md3) {
+	.contact {
+		padding: 80px 0px;
+		&__img {
+			top: -20px;
+			max-width: 55px;
+		}
+		&__title {
+			margin: 30px 0px 40px 20px;
+			font-size: 20px;
+			text-align: center;
+		}
+		&__text {
+			max-width: 100%;
+			margin-bottom: 20px;
+			line-height: 26px;
+			font-size: 20px;
+		}
+		&__btn {
+			padding: 25px 38px 22px 40px;
+		}
+	}
+}
+
+@media(max-width: $md4) {
+	.contact {
+		padding: 60px 0px;
+		&__title {
+			margin: 20px 0px 30px 0px;
+			font-size: 18px;
+			text-align: center;
+		}
+		&__text {
+			line-height: 20px;
+			font-size: 18px;
+		}
+		&__btn {
+			padding: 23px 22px 23px 22px;
+		}
+	}
+}
+
