@@ -1,0 +1,147 @@
+.service {
+	position: relative;
+	padding: 115px 0px 50px;
+	background-image: url(../img/service-bg.jpg);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #337cec;
+	color: $secondary_color;
+	&__img {
+		position: absolute;
+		top: -10px;
+		left: -20px;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+	&__item {
+		padding: 0 15px 65px;
+		flex-basis: 55%;
+		&-content {
+			flex-basis: 45%;
+		}
+	}
+	&__item-text {
+		font-family: $secondary_font;
+		font-size: $size_big_5;
+		line-height: 72px;
+		text-transform: uppercase;
+	}
+	&__item-text--bg {
+		display: block;
+		max-width: 500px;
+		background-color: $primary_color;
+		position: relative;
+		z-index: 2;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 100%;
+			transform: translateY(-50%);
+			z-index: -1;
+			height: 72px;
+			width: 100%;
+			background-color: $primary_color;
+		}
+	}
+	&__item-text--dots {
+		position: relative;
+		display: inline-block;
+		&:after {
+			content: '';
+			background-image: url(../img/service-dots.png);
+			position: absolute;
+			top: 50%;
+			right: -80px;
+			transform: translateY(-50%);
+			width: 60px;
+			height: 24px;
+		}
+	}
+	&__item-description {
+		margin-bottom: 50px;
+		font-size: 30px;
+		font-weight: $secondary_weight;
+		line-height: 48px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media(max-width: $md1) {
+	.service {
+		&__item-text {
+			font-size: 30px;
+			line-height: 65px;
+		}
+		&__item-text--bg {
+			&:after {
+				height: 65.5px;
+			}
+		}
+		&__item-description {
+			margin-bottom: 40px;
+			font-size: 26px;
+			line-height: 36px;
+		}
+	}
+}
+
+@media(max-width: $md2) {
+	.service {
+		padding: 90px 0px 40px;
+		&__item {
+			flex-basis: 100%;
+		}
+		&__item-text {
+			font-size: 26px;
+			line-height: 50px;
+		}
+		&__item-text--bg {
+			max-width: 400px;
+			&:after {
+				height: 50px;
+			}
+		}
+		&__item-description {
+			margin-bottom: 30px;
+			font-size: 22px;
+			line-height: 26px;
+		}
+	}
+}
+
+@media(max-width: $md4) {
+	.service {
+		padding: 60px 0px 30px;
+		&__item {
+			padding-bottom: 30px;
+		}
+		&__item-text {
+			font-size: 18px;
+			line-height: 40px;
+		}
+		&__item-text--bg {
+			&:after {
+				height: 40px;
+			}
+		}
+		&__item-description {
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+		&__item-text--dots {
+			&:after {
+				right: -60px;
+				width: 50px;
+			}
+		}
+	}
+}
