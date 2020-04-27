@@ -45,7 +45,7 @@
 			right: 100%;
 			transform: translateY(-50%);
 			z-index: -1;
-			height: 72px;
+			height: 100%;
 			width: 100%;
 			background-color: $primary_color;
 		}
@@ -81,11 +81,6 @@
 			font-size: 30px;
 			line-height: 65px;
 		}
-		&__item-text--bg {
-			&:after {
-				height: 65.5px;
-			}
-		}
 		&__item-description {
 			margin-bottom: 40px;
 			font-size: 26px;
@@ -104,12 +99,6 @@
 			font-size: 26px;
 			line-height: 50px;
 		}
-		&__item-text--bg {
-			max-width: 400px;
-			&:after {
-				height: 50px;
-			}
-		}
 		&__item-description {
 			margin-bottom: 30px;
 			font-size: 22px;
@@ -127,11 +116,6 @@
 		&__item-text {
 			font-size: 18px;
 			line-height: 40px;
-		}
-		&__item-text--bg {
-			&:after {
-				height: 40px;
-			}
 		}
 		&__item-description {
 			margin-bottom: 20px;

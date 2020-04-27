@@ -1,0 +1,11 @@
+.supported {
+  background-image: url(../img/supported-bg.jpg);
+  height: 100%;
+  background-position: center;
+}
+
+.supported__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
