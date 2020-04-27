@@ -20,6 +20,15 @@
 		font-weight: $secondary_weight;
 		text-transform: uppercase;
 		border: 3px solid $color_beta;
+		transition: .3s linear;
+		&:hover {
+			border-color: $secondary_color;
+		}
+		&:active {
+			background-color: $secondary_color;
+			color: $primary_color;
+			border-color: $secondary_color;
+		}
 	}
 	&__item-phone {
 		color: $color_beta;

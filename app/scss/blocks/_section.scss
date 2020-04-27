@@ -1,9 +1,10 @@
 .section {
-	&__item {
+	&__item-wrapper {
 		display: flex;
 		align-items: center;
 	}
 	&__item-title {
+		font-family: $secondary_font;
 		margin-right: 35px;
 		font-size: $size_big_4;
 		line-height: 80px;
@@ -28,8 +29,9 @@
 @media(max-width: $md2) {
 	.section {
 		&__item-title {
-			font-size: 34px;
-			line-height: 60px;
+			margin-right: 15px;
+			font-size: 32px;
+			line-height: 52px;
 		}
 	}
 }
@@ -37,9 +39,9 @@
 @media(max-width: $md3) {
 	.section {
 		&__item-title {
-			margin-right: 15px;
-			font-size: 28px;
-			line-height: 40px;
+			margin-right: 10px;
+			font-size: 22px;
+			line-height: 30px;
 		}
 		&__item-img {
 			max-width: 55px;
