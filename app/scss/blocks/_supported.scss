@@ -12,7 +12,7 @@
 		background-color: $primary_color;
 		color: $secondary_color;
 		font-family: $secondary_font;
-		font-size: $size_big_4;
+		font-size: $size_big_5;
 		line-height: 70px;
 		text-transform: uppercase;
 		padding-right: 40px;
@@ -72,7 +72,7 @@
 			max-width: 300px;
 		}
 		&__title {
-			font-size: 40px;
+			font-size: 32px;
 			line-height: 60px;
 		}
 		&__item-text {
@@ -92,7 +92,7 @@
 			max-width: 250px;
 		}
 		&__title {
-			font-size: 36px;
+			font-size: 28px;
 			line-height: 50px;
 			padding-right: 20px;
 		}
@@ -118,7 +118,7 @@
 			max-width: 100px;
 		}
 		&__title {
-			font-size: 28px;
+			font-size: 24px;
 			line-height: 40px;
 		}
 		&__item {
