@@ -1,0 +1,166 @@
+.footer {
+	color: $secondary_color;
+	&__header {
+		padding: 80px 0px;
+		background-color: #1a1a26;
+	}
+	&__header-inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&__header-logo {
+		color: $color_alpha;
+		font-family: $secondary_font;
+		font-size: $size_big_6;
+		span {
+			color: $secondary_color;
+		}
+	}
+	&__body {
+		padding: 20px 0px;
+		background-color: #151520;
+	}
+	&__body-inner {
+		display: flex;
+		font-weight: $secondary_weight;
+		font-size: $size_gamma;
+	}
+	&__copyright {
+		font-family: $font_beta;
+		position: relative;
+		padding-right: 15px;
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 2px;
+			height: 100%;
+			background-color: #53535e;
+		}
+	}
+	&__text {
+		padding-left: 15px;
+	}
+}
+.footer-action {
+	display: flex;
+	&__phone {
+		margin-right: 30px;
+	}
+}
+.footer-phone {
+	display: flex;
+	align-items: center;
+	&__icon {
+		margin-right: 10px;
+		display: block;
+		width: 10px;
+		height: 8px;
+	}
+	&__link {
+		color: $secondary_color;
+		font-size: $size_delta;
+		font-weight: $secondary_weight;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+.footer-place {
+	display: flex;
+	align-items: center;
+	&__icon {
+		margin-right: 10px;
+		display: block;
+		width: 8px;
+		height: 11px;
+	}
+	&__text {
+		font-size: $size_delta;
+		font-weight: $secondary_weight;
+	}
+}
+
+@media(max-width: $md2) {
+	.footer-action {
+		&__phone {
+			margin-right: 20px;
+		}
+	}
+	.footer-phone {
+		&__link {
+			font-size: 16px;
+		}
+	}
+	.footer-place {
+		&__text {
+			font-size: 16px;
+		}
+	}
+}
+
+@media(max-width: $md3) {
+	.footer {
+		&__header {
+			padding: 60px 0px;
+		}
+		&__header-logo {
+			font-size: 24px;
+		}
+	}
+}
+
+@media(max-width: 680px) {
+	.footer {
+		&__header {
+			padding: 40px 0px;
+		}
+		&__header-inner {
+			justify-content: center;
+			flex-direction: column;
+		}
+		&__header-logo {
+			margin-bottom: 20px;
+		}
+		.footer-phone {
+			&__link {
+				font-size: 14px;
+			}
+		}
+		.footer-place {
+			&__text {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media(max-width: $md4) {
+	.footer {
+		&__body-inner {
+			font-size: 14px;
+		}
+		&__copyright {
+			padding-right: 10px;
+		}
+		&__text {
+			padding-left: 10px;
+		}
+		&-action {
+			flex-direction: column;
+		}
+	}
+	.footer-phone {
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width: $minwidth) {
+	.footer {
+		&__body-inner {
+			font-size: 12px;
+		}
+	}
+}
