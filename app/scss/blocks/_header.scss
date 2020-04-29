@@ -6,6 +6,19 @@
 	background-position: bottom;
 	background-size: cover;
 	height: 100%;
+	&__inner {
+		transition: .2s linear;
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			padding: 20px 0;
+			background-color: $primary_color;
+			opacity: 0.9;
+		}
+	}
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -24,7 +37,7 @@
 		&:hover {
 			border-color: $secondary_color;
 		}
-		&:active {
+		&:focus {
 			background-color: $secondary_color;
 			color: $primary_color;
 			border-color: $secondary_color;
@@ -110,16 +123,8 @@
 	}
 }
 
-.header__inner.fixed {
-	padding: 20px 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
-	background-color: $primary_color;
-	opacity: 0.9;
-}
+
+
 
 
 @media(max-width: $maxwidth) {
@@ -267,7 +272,13 @@
 	}
 }
 
-@media(max-width: $minwidth) {
+// @media(max-height: 568px) {
+// 	.header {
+
+// 	}
+// }
+
+@media(max-width: 360px) {
 	.header {
 		&__body {
 			padding-top: 30px;
@@ -280,6 +291,10 @@
 		}
 		&__body-suptitle {
 			font-size: 38px;
+		}
+		&__body-text {
+			font-size: 16px;
+			line-height: 24px;
 		}
 		&__body-description {
 			&:before {

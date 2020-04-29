@@ -81,6 +81,9 @@
 		&__img {
 			max-width: 120px;
 		}
+		&__header-link {
+			margin-top: 0;
+		}
 		&__header-list {
 			li {
 				flex-basis: 50%;
@@ -130,9 +133,6 @@
 			li {
 				flex-basis: 100%;
 			}
-		}
-		&__header-link {
-			margin-top: 0;
 		}
 	}
 	.tabs-item {

@@ -11,17 +11,17 @@
 	<header class="header">
 		<div class="header__inner" id="header__inner">
 			<div class="container">
-				<div class="header__wrapper">
+				<div class="header__wrapper" id="header__body">
 					<div class="logo"><span>imba.</span>Agency</div>
 					<div class="header__item">
-						<button class="header__item-btn">Обсудить проект</button>
+						<button class="header__item-btn" data-modal="#modal_form">Обсудить проект</button>
 						<a href="tel:380953941392" class="header__item-phone">38 (095) 394-13-92</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- /.header__inner -->
-		<div class="header__body" id="header__body">
+		<div class="header__body">
 			<div class="container">
 				<div class="header__title">
 					<h1 class="header__title-text">Решаем любые</h1>
@@ -90,7 +90,7 @@
 			<div class="contact__title">Без сложностей, максимально быстро и с заботой.</div>
 			<p class="contact__text">Наш аналитик свяжется с вами, задаст все необходимые вопросы, составит подробное задание, если его ещё нет.</p>
 			<p class="contact__text">Специалисты проведут <span>бесплатный</span> аудит вашего проекта и предложат оптимальное решение.</p>
-			<button class="contact__btn btn">Связаться с аналитиком</button>
+			<button class="contact__btn btn" data-modal="#modal_form">Связаться с аналитиком</button>
 		</div>
 		<!-- /.container -->
 	</section>
@@ -286,7 +286,7 @@
 						<img src="img/Phone.png" alt="" class="form__wrapper-icon" />
 					</div>
 					<div class="form__callback">
-						<button type="submit" class="form__callback-button">Обсудить проект</button>
+						<button type="submit" class="form__callback-button btn">Обсудить проект</button>
 						<div class="form__callback-text">Ответим в течении 15 минут</div>
 					</div>
 				</form>
@@ -336,6 +336,32 @@
 		<!-- /.footer__body -->
 	</footer>
 	<!-- /.footer -->
+
+	<div class="modal" id="modal_form">
+		<div class="modal__wrapper">
+			<button class="modal__wrapper-close" data-close>
+				<img src="img/close.svg" alt="" />
+			</button>
+			<div class="modal__wrapper-title modal-title">
+				<img src="img/modal-dots.png" alt="" class="modal-title__img"/>
+				<h4 class="modal-title__text">Обсудить проект</h4>
+				<img src="img/modal-dots.png" alt="" class="modal-title__img"/>
+			</div>
+			<form action="#" class="modal__wrapper-form">
+				<div class="form__wrapper">
+					<label for="#" class="form__wrapper-label">Ваше имя<span>*</span></label>
+					<input type="text" placeholder="Введите своё имя" name="user_name" class="form__wrapper-input"/>
+					<img src="img/profil.png" alt="" class="form__wrapper-icon" />
+				</div>
+				<div class="form__wrapper">
+					<label for="#" class="form__wrapper-label">Ваш номер телефона<span>*</span></label>
+					<input type="text" placeholder="(095) 394-13-92" name="user_phone" class="form__wrapper-input"/>
+					<img src="img/Phone.png" alt="" class="form__wrapper-icon" />
+				</div>
+				<button class="modal__btn btn">Отправить</button>
+			</form>
+		</div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
