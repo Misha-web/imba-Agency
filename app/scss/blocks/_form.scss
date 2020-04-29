@@ -1,0 +1,122 @@
+.form {
+	padding: 120px 0px 100px;
+	flex-basis: 47.5%;
+	&__wrapper {
+		margin-bottom: 30px;
+		position: relative;
+	}
+	&__wrapper-label {
+		padding: 0 10px;
+		line-height: 26px;
+		position: absolute;
+		top: -25%;
+		left: 30px;
+		font-size: $size_gamma;
+		font-weight: $secondary_weight;
+		background-color: $secondary_color;
+		span {
+			color: $color_gamma;
+		}
+	}
+	&__wrapper-input {
+		padding: 20px 60px 20px 30px;
+		width: 100%;
+		border: 1px solid #d2d9e0;
+		color: $color_zeta;
+		font-size: $size_delta;
+		font-weight: $secondary_weight;
+		outline: none;
+		&::placeholder {
+			color: $color_zeta;
+		}
+	}
+	&__wrapper-icon {
+		pointer-events: none;
+		position: absolute;
+		top: 50%;
+		right: 25px;
+		transform: translateY(-50%);
+		display: block;
+		width: 18px;
+		height: 18px;
+	}
+	&__callback {
+		display: flex;
+		align-items: center;
+		margin-top: 40px;
+	}
+	&__callback-button {
+		padding: 28px 40px 20px;
+		color: $secondary_color;
+		font-family: $font_alpha;
+		font-size: $size_gamma;
+		font-weight: $secondary_weight;
+		text-transform: uppercase;
+		background-color: $color_gamma;
+	}
+	&__callback-text {
+		max-width: 140px;
+		margin-left: 25px;
+		opacity: 0.5;
+		font-size: $size_beta;
+		line-height: 18px;
+		text-transform: uppercase;
+	}
+}
+
+@media(max-width: $md2) {
+	.form {
+		padding: 50px 0px 80px;
+		flex-basis: 80%;
+		&__callback {
+			justify-content: center;
+		}
+	}
+}
+
+@media(max-width: $md3) {
+	.form {
+		padding-bottom: 50px;
+		&__wrapper-label {
+			padding: 0 5px;
+			line-height: 20px;
+			font-size: 14px;
+			left: 20px;
+		}
+		&__wrapper-input {
+			padding: 15px 60px 15px 20px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.form {
+		&__callback {
+			margin-top: 30px;
+		}
+		&__callback-button {
+			padding: 24px 20px 20px;
+			font-size: 14px;
+		}
+		&__callback-text {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media(max-width: $md4) {
+	.form {
+		flex-basis: 100%;
+		&__callback {
+			display: flex;
+			flex-direction: column;
+		}
+		&__callback-button {
+			margin-bottom: 20px;
+		}
+		&__callback-text {
+			max-width: 100%;
+		}
+	}
+}
