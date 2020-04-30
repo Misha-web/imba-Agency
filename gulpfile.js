@@ -20,7 +20,7 @@ gulp.task('tinypng', function () {
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/**/*.scss')
-        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
             overRideBrowsers: ['last 10 versions']
         }))
